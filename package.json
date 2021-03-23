@@ -21,7 +21,8 @@
     "watch:js": "onchange \"src/js\" -- run-s build:js",
     "watch:images": "onchange \"src/images\" -- run-s build:images",
     "dev": "run-p serve watch:*",
-    "postinstall": "run-s build watch"
+    "postinstall": "run-s build watch",
+    "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
     "autoprefixer": "^9.0.1",
