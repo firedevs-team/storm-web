@@ -1,5 +1,5 @@
 {
   "projects": {
-    "default": "storm-staging-230f7"
+    "default": "storm-production"
   }
 }
