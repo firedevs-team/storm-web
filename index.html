@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>  var MessageBirdChatWidgetSettings = {     widgetId: 'f01ed472-55d5-4412-b8e0-d22d90bb636c',     initializeOnLoad: true,   };  !function(){"use strict";if(Boolean(document.getElementById("live-chat-widget-script")))console.error("MessageBirdChatWidget: Snippet loaded twice on page");else{var e,t;window.MessageBirdChatWidget={},window.MessageBirdChatWidget.queue=[];for(var i=["init","setConfig","toggleChat","identify","hide","on","shutdown"],n=function(){var e=i[d];window.MessageBirdChatWidget[e]=function(){for(var t=arguments.length,i=new Array(t),n=0;n<t;n++)i[n]=arguments[n];window.MessageBirdChatWidget.queue.push([[e,i]])}},d=0;d<i.length;d++)n();var a=(null===(e=window)||void 0===e||null===(t=e.MessageBirdChatWidgetSettings)||void 0===t?void 0:t.widgetId)||"",o=function(){var e,t=document.createElement("script");t.type="text/javascript",t.src="https://livechat.messagebird.com/bootstrap.js?widgetId=".concat(a),t.async=!0,t.id="live-chat-widget-script";var i=document.getElementsByTagName("script")[0];null==i||null===(e=i.parentNode)||void 0===e||e.insertBefore(t,i)};"complete"===document.readyState?o():window.attachEvent?window.attachEvent("onload",o):window.addEventListener("load",o,!1)}}();</script>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap">
@@ -33,7 +34,10 @@
 						<div class="hero-copy">
 	                        <h1 class="hero-title mt-0">Te ayudamos a crecer con tecnología</h1>
 	                        <p class="hero-paragraph">Obten tus resultados esperados de la mano de emprendedores digitales. No te quedes atrás en la competencia.</p>
-	                        <div class="hero-cta"><a class="button button-primary" href="#">Hablemos</a><a class="button" href="#">Contáctanos</a></div>
+	                        <div class="hero-cta"><a class="button button-primary" href="#" onclick="(function(){
+                                window.MessageBirdChatWidget.toggleChat();
+                                return false;
+                            })();return false;">Hablemos</a></div>
 						</div>
 						<div class="hero-figure anime-element">
 							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
@@ -130,7 +134,10 @@
 					<div class="cta-inner section-inner">
 						<h3 class="section-title mt-0">¿Quieres materializar una idea?</h3>
 						<div class="cta-cta">
-							<a class="button button-primary button-wide-mobile" href="#">Contáctanos</a>
+							<a class="button button-primary button-wide-mobile" href="#" onclick="(function(){
+                                window.MessageBirdChatWidget.toggleChat();
+                                return false;
+                            })();return false;">Hablemos</a>
 						</div>
 					</div>
 				</div>
