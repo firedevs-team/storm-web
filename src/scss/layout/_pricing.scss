@@ -109,6 +109,14 @@
     align-self: flex-end;
 }
 
+.donwload {
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 @include media( '>medium' ) {
 
 	.pricing {
