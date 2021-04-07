@@ -1,0 +1,29 @@
+.how-wrap {
+    
+    .section-title {
+        margin-bottom: 70px;
+    }
+
+    .how-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        .how-item {
+            margin: 32px;
+            width: 380px;
+            max-width: 380px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .how-item-icon {
+                width: 90px;  
+            }
+        }
+    }
+}
+
+
+
